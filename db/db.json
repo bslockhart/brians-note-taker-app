@@ -1,0 +1,23 @@
+[
+    {
+      "Title": "Test Title",
+      "Body": "Test Text",
+      "id": 0,
+      "currentlyPosted": false,
+      "currentlySelected": false
+    },
+    {
+      "Title": "Test 2",
+      "Body": "Test 2",
+      "id": 1,
+      "currentlyPosted": false,
+      "currentlySelected": false
+    },
+    {
+      "Title": "Test 3",
+      "Body": "Test 3",
+      "id": 2,
+      "currentlyPosted": false,
+      "currentlySelected": false
+    }
+  ]
