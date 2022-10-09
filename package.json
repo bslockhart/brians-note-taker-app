@@ -1,14 +1,27 @@
 {
-  "name": "note-taker",
+  "name": "11th-challenge---note-taker",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "devStart": "nodemon server.js",
+    "dev": "nodemon --ignore './asyncFile/' ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bslockhart/Brians-Note-Taker.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bslockhart/Brians-Note-Taker/issues"
+  },
+  "homepage": "https://github.com/bslockhart/Brians-Note-Taker#readme",
+  "keywords": [],
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }
