@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bslockhart/Brians-Note-Taker.git"
+    "url": "git+https://git.heroku.com/brians-note-taker-app.git"
   },
   "author": "",
   "license": "MIT",
