@@ -1,0 +1,185 @@
+
+
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  touch-action: manipulation; 
+}
+body {
+  background-color: rgba(219, 221, 240, 0.1);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+
+#intro-container {
+  position: relative;
+  width: 69.5%;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+#intro-container a {
+  margin-top: 5px;
+  font-size: 25px;
+  color: black;
+  border-bottom: 1.7px solid black;
+  text-decoration: none;
+  transition: 0.1s all ease-in-out;
+}
+
+#intro-container a:hover {
+  transform: scale(1.05);
+  color: rgb(73, 207, 162);
+  border-bottom: 1.7px solid rgb(73, 207, 162);
+  transition: 0.1s all ease-in-out;
+}
+#intro-container a:active {
+  transform: scale(1);
+}
+
+#intro-inner {
+  display: flex;
+  align-items: center;
+}
+
+.fa-book {
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+#intro-container h1 {
+  color: black;
+  font-size: 50px;
+  user-select: none;
+}
+
+#main-container {
+  filter: blur(7px);
+  pointer-events: none;
+  width: 69.5%;
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
+}
+
+#main-header {
+  width: 100%;
+  height: 40px;
+  padding: 10px 10px;
+  background-color: rgb(73, 207, 162);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#main-header p {
+  user-select: none;
+  font-size: 15px;
+  color: white;
+}
+
+#main-header button {
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.save {
+  display: flex;
+  width: 20px;
+  filter: invert(100);
+  margin-right: 5px;
+}
+
+.save.inactive {
+  display: none;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+}
+
+.trash {
+  color: red;
+  right: 5px;
+  font-size: 15px;
+}
+
+#main-body {
+  width: 100%;
+  border: 0.1px solid rgb(185, 185, 185);
+  height: 400px;
+  display: flex;
+}
+
+#note-list {
+  overflow-y: scroll;
+  border-right: 0.1px solid rgb(185, 185, 185);
+  width: 30%;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 10px 10px;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+.note {
+  color: black;
+  text-decoration: none;
+}
+
+#note-editor {
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+#note-title,
+#note-body {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 3px 0;
+  position: absolute;
+}
+
+#note-title {
+  font-size: 30px;
+}
+
+#note-body {
+  font-size: 15px;
+  top: 40px;
+}
+
+#note-body {
+  font-size: 15px;
+  width: 90%;
+  height: 303px;
+  resize: none;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.025);
+  border-radius: 5px;
+  top: 40px;
+}
