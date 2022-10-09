@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Note taker - Landing</title>
+  </head>
+  <body>
+    <main>
+      <section id="intro-container" class="first-launch">
+          <div id="intro-inner">
+            <i class="fa-solid fa-book"></i>
+            <h1>Note Taker</h1>
+          </div>
+          <a href="/notes">View notes</a>
+        </div>
+      </section>
+      <!-- main-container in index.html is just for stylizing purposes -->
+      <section id="main-container">
+        <div id="main-header">
+          <p>Note Taker</p>
+          <div id="header-right"></div>
+        </div>
+        <div id="main-body">
+          <div id="note-list"></div>
+          <div id="note-editor">
+            <form
+              id="note-form"
+              action="/notes/preview"
+              method="POST"
+              value="test"
+            >
+              <input id="note-title" type="text" placeholder="Note title" />
+              <textarea id="note-body" type="text" placeholder="Note body" ></textarea> 
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script src="./index.js"></script>
+</html>
