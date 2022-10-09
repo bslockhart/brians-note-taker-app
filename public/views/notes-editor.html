@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Note taker - Editor</title>
+</head>
+
+<body>
+  <main>
+    <section id="main-container" class="placeholder">
+      <div id="main-header">
+        <p id="main-title">Note Taker - Editor</p>
+        <div id="header-right">
+          <i class="fa-solid fa-floppy-disk save inactive"></i>
+        </div>
+      </div>
+      <div id="main-body">
+        <div id="note-list"></div>
+        <div id="note-editor">
+          <form id="note-form" action="/api/notes" method="POST">
+            <input name="titleData" class="note-input" id="note-title" data-input="title" type="text"
+              placeholder="Note title" />
+            <textarea name="bodyData" class="note-input" id="note-body" data-input="body" type="text"
+              placeholder="Note body"></textarea>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
