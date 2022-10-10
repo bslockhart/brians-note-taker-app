@@ -16,7 +16,7 @@ document.getElementById('note-title').focus();
 var localFirstLaunch = localStorage.getItem('firstLaunch');
 parsedScore = JSON.parse(localFirstLaunch);
 if (!parsedScore) {
-  fade.className = ''; 
+  fade.className = '';
 } else {
   firstLaunch = false;
   localStorage.setItem('firstLaunch', JSON.stringify(firstLaunch));
@@ -26,6 +26,7 @@ if (!parsedScore) {
 var validData = [false, false];
 formInput.forEach((item) => {
   item.addEventListener('keyup', (e) => {
+
     if (e.target.dataset.input == 'title') {
       if (e.target.value.length >= 1) {
         validData[0] = true;
@@ -60,9 +61,7 @@ function deleteNote(id) {
 
   var allNotes = document.querySelectorAll('.singleNote-container');
   allNotes.forEach((noteEl) => {
-
     var noteElId = noteEl.childNodes[0].classList[3].split('-')[1];
-
     if (id == noteElId) {
       noteEl.remove();
     }
@@ -82,7 +81,6 @@ var getNotes = async () => {
       alert('No data returned!');
     } else {
       var notes = await res.json();
-
       notes.forEach((note) => {
         generateNoteEl(note);
       });
@@ -90,9 +88,7 @@ var getNotes = async () => {
       var deleteBtns = document.querySelectorAll('.trash');
       deleteBtns.forEach((button) => {
         button.addEventListener('click', (e) => {
-
           var noteId = e.target.classList[3].split('-')[1];
-
           deleteNote(noteId);
           updateEl();
         });
@@ -120,7 +116,6 @@ function updateEl() {
   });
 }
 
-
 function generateNoteEl(notes) {
   var singleNote = document.createElement('div');
   singleNote.classList.add('singleNote-container');
@@ -136,10 +131,9 @@ function generateNoteEl(notes) {
 
 getNotes();
 
+
 saveBtn.addEventListener('click', () => {
-
   document.querySelector('form').submit();
-
 
   firstLaunch = false;
   localStorage.setItem('firstLaunch', JSON.stringify(firstLaunch));
