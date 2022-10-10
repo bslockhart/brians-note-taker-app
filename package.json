@@ -1,5 +1,5 @@
 {
-  "name": "11th-challenge---note-taker",
+  "name": "brians-note-taker-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -14,9 +14,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bslockhart/Brians-Note-Taker/issues"
+    "url": "https://github.com/bslockhart/brians-note-taker-app/issues"
   },
-  "homepage": "https://github.com/bslockhart/Brians-Note-Taker#readme",
+  "homepage": "https://github.com/bslockhart/brians-note-taker-app#readme",
   "keywords": [],
   "dependencies": {
     "express": "^4.17.3"
