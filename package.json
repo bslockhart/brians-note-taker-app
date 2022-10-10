@@ -1,5 +1,5 @@
 {
-  "name": "brians-note-taker-app",
+  "name": "11th-challenge---note-taker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://git.heroku.com/brians-note-taker-app.git"
+    "url": "git+https://github.com/csabbah/full-stack-note-taker.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bslockhart/brians-note-taker-app/issues"
+    "url": "https://github.com/csabbah/full-stack-note-taker/issues"
   },
-  "homepage": "https://github.com/bslockhart/brians-note-taker-app#readme",
+  "homepage": "https://github.com/csabbah/full-stack-note-taker#readme",
   "keywords": [],
   "dependencies": {
     "express": "^4.17.3"

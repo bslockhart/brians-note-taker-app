@@ -1,9 +1,12 @@
+/* This CSS is for the main application */
+
+/* -------------------- Root */
 * {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  touch-action: manipulation;
+  touch-action: manipulation; /* This removes double tap to zoom */
 }
 
 body {
@@ -17,6 +20,7 @@ main {
   align-items: center;
 }
 
+/* -------------------- Main container */
 @keyframes fade {
   0% {
     filter: blur(7px);
@@ -34,7 +38,7 @@ main {
 #main-container.first-launch {
   animation: fade 0.2s ease-in-out;
 }
-
+/* -------------------- Main header */
 #main-header {
   height: 40px;
   padding: 10px 10px;
@@ -90,11 +94,13 @@ main {
   align-items: center;
 }
 
+/* -------------------- Main body */
+
 #main-body {
   height: 400px;
   display: flex;
 }
-
+/* ------- Note list */
 #note-list {
   overflow-y: scroll;
   border-right: 1px solid rgb(185, 185, 185);
@@ -120,6 +126,7 @@ main {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+/* ------- Note list CSS (This is for the endpoint '/notes') */
 #note-preview-list {
   overflow-y: scroll;
   border-right: 1px solid rgb(185, 185, 185);
@@ -175,6 +182,7 @@ main {
   cursor: pointer;
 }
 
+/* ------- Note body */
 #note-editor {
   width: 80%;
   margin-top: 10px;
@@ -208,6 +216,7 @@ main {
   top: 40px;
 }
 
+/* ------- Note preview CSS (This is for the endpoint '/notes') */
 #note-preview {
   width: 80%;
   font-family: inherit;
