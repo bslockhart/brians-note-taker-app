@@ -1,14 +1,16 @@
-/* This CSS is for the landing page*/
+/* CSS for the landing page*/
 
-/* -------------------- Root */
+/* Root */
 
 * {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  touch-action: manipulation; /* This removes double tap to zoom */
+  touch-action: manipulation;
+  /* This removes double tap to zoom */
 }
+
 body {
   background-color: rgba(219, 221, 240, 0.1);
 }
@@ -21,7 +23,7 @@ main {
   width: 100vw;
 }
 
-/* -------------------- Landing page */
+/* Landing page */
 #intro-container {
   position: relative;
   width: 69.5%;
@@ -48,6 +50,7 @@ main {
   border-bottom: 1.7px solid rgb(73, 207, 162);
   transition: 0.1s all ease-in-out;
 }
+
 #intro-container a:active {
   transform: scale(1);
 }
@@ -79,7 +82,7 @@ main {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
 }
 
-/* -------------------- Main header */
+/* Main header */
 #main-header {
   width: 100%;
   height: 40px;
@@ -126,7 +129,7 @@ main {
   font-size: 15px;
 }
 
-/* -------------------- Main body */
+/* Main body */
 
 #main-body {
   width: 100%;
@@ -134,7 +137,8 @@ main {
   height: 400px;
   display: flex;
 }
-/* ------- Note list */
+
+/* Note list */
 #note-list {
   overflow-y: scroll;
   border-right: 0.1px solid rgb(185, 185, 185);
@@ -148,12 +152,13 @@ main {
   padding: 10px 10px;
   border-bottom: 1px solid rgb(185, 185, 185);
 }
+
 .note {
   color: black;
   text-decoration: none;
 }
 
-/* ------- Note body */
+/* Note body */
 #note-editor {
   width: 80%;
   margin-top: 10px;
