@@ -15,6 +15,7 @@ router.get('/notes', (req, res) => {
 router.post('/notes', (req, res) => {
   var validData = true;
   var newData = {
+
     Title: req.body.titleData,
     Body: req.body.bodyData,
     id: noteDb.length,
@@ -27,11 +28,14 @@ router.post('/notes', (req, res) => {
       '<script>alert("Invalid Data, please fill in both fields."); window.location.href = "/notes";</script>'
     );
   } else {
+
     noteDb.forEach((dbNote) => {
+
       if (
         newData.Title.toLowerCase() == dbNote.Title.toLowerCase() &&
         newData.Body.toLowerCase() == dbNote.Body.toLowerCase()
       ) {
+
         validData = false;
       }
     });
