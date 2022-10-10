@@ -13,14 +13,17 @@ const noteDb = require('../data/db.json');
 router.get('/:id', function (req, res) {
   var Invalid = true;
   noteDb.forEach((item) => {
+
     if (req.params.id == item.id) {
       Invalid = false;
     }
   });
 
   if (Invalid) {
+
     res.sendFile(path.join(__dirname, '../public/views/notes-editor.html'));
   } else {
+
     autoSelect(noteDb, req.params.id);
     removeRecent(noteDb);
     res.sendFile(path.join(__dirname, '../public/views/notes-preview.html'));
@@ -33,3 +36,4 @@ router.get('/', (req, res) => {
 });
 
 module.exports = router;
+
