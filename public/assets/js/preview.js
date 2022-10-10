@@ -3,13 +3,11 @@ var previewBodyEl = document.getElementById('note-preview-body');
 var addBtn = document.querySelector('.add');
 var noteContainer = document.getElementById('note-preview-list');
 
-
 window.onpageshow = function (event) {
   if (event.persisted) {
-    window.location.reload(); 
+    window.location.reload();
   }
 };
-
 
 var getNotes = async () => {
   var url = '/api/notes';
@@ -24,15 +22,12 @@ var getNotes = async () => {
       alert('No data returned!');
     } else {
       var notes = await res.json();
-
       notes.forEach((note, index) => {
         note.id = index;
       });
 
-
       notes.forEach((note) => {
         generateNoteEl(note);
-
 
         if (note.currentlyPosted) {
           selectNewestNote(note);
@@ -44,26 +39,20 @@ var getNotes = async () => {
         handleNoteEvent(notes);
       });
 
-
       var deleteBtns = document.querySelectorAll('.trash');
       deleteBtns.forEach((button) => {
         button.addEventListener('click', (e) => {
-
           var noteId = e.target.classList[3].split('-')[1];
-
           deleteNote(noteId);
           updateEl();
         });
       });
       return notes;
     }
-
   } catch (error) {
-
     getNotes();
   }
 };
-
 
 function generateNoteEl(note) {
   var singleNote = document.createElement('div');
@@ -77,28 +66,22 @@ function generateNoteEl(note) {
   noteContainer.appendChild(singleNote);
 }
 
-
 var handleNoteEvent = (dbArr) => {
   var previewNotes = document.querySelectorAll('.note');
   previewNotes.forEach((previewNote) => {
     previewNote.addEventListener('click', () => {
       previewNote.classList.add('active');
       dbArr.forEach((dbNote) => {
-
         if (dbNote.id == previewNote.classList[1].split('-')[1]) {
-
           previewBodyEl.textContent = dbNote.Body;
           previewTitleEl.textContent = dbNote.Title;
-
           resetActive(previewNotes);
-
           previewNote.classList.add('active');
         }
       });
     });
   });
 };
-
 
 var resetActive = (htmlNodeList) => {
   htmlNodeList.forEach((checkClass) => {
@@ -135,12 +118,9 @@ function deleteNote(id) {
   var activePreviewEl = document.getElementById('note-preview');
   activePreviewEl.innerHTML = '';
 
-
   var allNotes = document.querySelectorAll('.singleNote-container');
   allNotes.forEach((noteEl) => {
-
     var noteElId = noteEl.childNodes[0].classList[3].split('-')[1];
-
     if (id == noteElId) {
       noteEl.remove();
     }
