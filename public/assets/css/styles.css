@@ -1,17 +1,19 @@
-/* This CSS is for the main application */
+/* CSS for the main application */
 
-/* -------------------- Root */
+/* Root */
 * {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  touch-action: manipulation; /* This removes double tap to zoom */
+  touch-action: manipulation;
+  /* This removes double tap to zoom */
 }
 
 body {
   background-color: rgba(219, 221, 240, 0.1);
 }
+
 main {
   height: 100vh;
   width: 100vw;
@@ -20,15 +22,17 @@ main {
   align-items: center;
 }
 
-/* -------------------- Main container */
+/* Main container */
 @keyframes fade {
   0% {
     filter: blur(7px);
   }
+
   100% {
     filter: blur(0);
   }
 }
+
 #main-container {
   width: 70%;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
@@ -38,7 +42,8 @@ main {
 #main-container.first-launch {
   animation: fade 0.2s ease-in-out;
 }
-/* -------------------- Main header */
+
+/* Main header */
 #main-header {
   height: 40px;
   padding: 10px 10px;
@@ -94,13 +99,14 @@ main {
   align-items: center;
 }
 
-/* -------------------- Main body */
+/* Main body */
 
 #main-body {
   height: 400px;
   display: flex;
 }
-/* ------- Note list */
+
+/* Note list */
 #note-list {
   overflow-y: scroll;
   border-right: 1px solid rgb(185, 185, 185);
@@ -113,6 +119,7 @@ main {
   background-color: rgba(0, 0, 0, 0.1);
   transition: 0.1s all ease-in-out;
 }
+
 #note-list a {
   user-select: none;
 }
@@ -126,7 +133,7 @@ main {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* ------- Note list CSS (This is for the endpoint '/notes') */
+/* Note CSS */
 #note-preview-list {
   overflow-y: scroll;
   border-right: 1px solid rgb(185, 185, 185);
@@ -164,6 +171,7 @@ main {
   justify-content: center;
   position: relative;
 }
+
 .singleNote-container i:hover {
   transform: scale(1.2);
 }
@@ -182,7 +190,7 @@ main {
   cursor: pointer;
 }
 
-/* ------- Note body */
+/* Note body */
 #note-editor {
   width: 80%;
   margin-top: 10px;
@@ -216,7 +224,7 @@ main {
   top: 40px;
 }
 
-/* ------- Note preview CSS (This is for the endpoint '/notes') */
+/* Note preview CSS */
 #note-preview {
   width: 80%;
   font-family: inherit;
