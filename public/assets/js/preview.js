@@ -6,11 +6,11 @@ var noteContainer = document.getElementById('note-preview-list');
 // On page load, refresh the window so the data is up to date
 window.onpageshow = function (event) {
   if (event.persisted) {
-    window.location.reload(); //reload page if it has been loaded from cache
+    window.location.reload();
   }
 };
 
-// Extract the data from the API database
+// Extract data from API database
 var getNotes = async () => {
   var url = '/api/notes';
   try {
@@ -58,7 +58,7 @@ var getNotes = async () => {
       });
       return notes;
     }
-    // If the above fetch fails...
+    // If the above fetch fails
   } catch (error) {
     // Re-execute the fetch
     getNotes();
@@ -155,7 +155,7 @@ function deleteNote(id) {
 }
 
 // Upon deleting a note, update all other elements to ensure consistency in label values
-// i.e. Update all links and labels (ids) starting value 0 and incrementing by 1
+// Update all links and labels (ids) starting value 0 and incrementing by 1
 function updateEl() {
   var noteList = document.querySelectorAll('.note');
   var trashList = document.querySelectorAll('.trash');
