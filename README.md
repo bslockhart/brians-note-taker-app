@@ -30,7 +30,9 @@ An application called Note Taker that can be used to write and save notes. This 
 - CSS
 
 ### Mock Up
-![Team Generator HTML Webpage Screenshot](./assets/images/MockUp.png)
+![Team Generator HTML Webpage Screenshot](./assets/images/11-express-homework-demo-01.png)
+![Team Generator HTML Webpage Screenshot](./assets/images/11-express-homework-demo-02.png)
+
 
 ## Instructions
 1. Clone the main project, then open the cloned file.
@@ -93,5 +95,5 @@ An application called Note Taker that can be used to write and save notes. This 
 
 ### Submission
 * Date Submitted: October 11, 2022
-* The URL of the functional, deployed application:
-* The URL of the GitHub repository, including a unqique name and a README describing the project:
+* The URL of the functional, deployed application: https://brians-note-taker-app.herokuapp.com/
+* The URL of the GitHub repository, including a unqique name and a README describing the project: https://github.com/bslockhart/brians-note-taker-app
