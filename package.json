@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/csabbah/full-stack-note-taker.git"
+    "url": "git+https://git.heroku.com/brians-note-taker-app.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/csabbah/full-stack-note-taker/issues"
+    "url": "https://github.com/bslockhart/brians-note-taker-app/issues"
   },
-  "homepage": "https://github.com/csabbah/full-stack-note-taker#readme",
+  "homepage": "https://github.com/bslockhart/brians-note-taker-app",
   "keywords": [],
   "dependencies": {
     "express": "^4.17.3"
