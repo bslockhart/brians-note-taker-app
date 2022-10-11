@@ -41,10 +41,6 @@ An application called Note Taker that can be used to write and save notes. This 
 4. Initiate file in command prompt: npm run dev
 5. Or, visit the live page via Heroku link (see links)
 
-## Links
-* Link to the live application:
-[View Here]()
-
 ### User Story
 * AS A small business owner
 * I WANT to be able to write and save notes
