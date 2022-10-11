@@ -8,6 +8,7 @@ An application called Note Taker that can be used to write and save notes. This 
 ## Table of Contents
 * [Tools](#tools)
 * [Mock Up](#Mock-Up)
+* [Screen Shots](#Screen-Shots)
 * [Instructions](#Instructions)
 * [User Story](#User-Story)
 * [Acceptance Criteria](#Acceptance-Criteria)
@@ -28,6 +29,10 @@ An application called Note Taker that can be used to write and save notes. This 
 ### Mock Up
 ![Team Generator HTML Webpage Screenshot](./assets/images/11-express-homework-demo-01.png)
 ![Team Generator HTML Webpage Screenshot](./assets/images/11-express-homework-demo-02.png)
+
+## Screen Shots
+![Application Screenshot 1](./assets/images/Screen-shot-1.png)
+![Application Screenshot 2](./assets/images/Screen-shot-2.png)
 
 ## Instructions
 1. Clone the main project, then open the cloned file.
