@@ -76,7 +76,7 @@ An application called Note Taker that can be used to write and save notes. This 
 * Repository follows best practices for file structure and naming conventions.
 * Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
 * Repository contains multiple descriptive commit messages.
-* Repository contains a high-quality README with description and a link to walkthrough video.
+* Repository contains quality README file with description, screenshot, and link to deployed application.
 
 ### Bonus
 * Application allows users to delete notes.
