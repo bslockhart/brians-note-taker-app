@@ -9,10 +9,8 @@ An application called Note Taker that can be used to write and save notes. This 
 * [Tools](#tools)
 * [Mock Up](#Mock-Up)
 * [Instructions](#Instructions)
-* [Links](#Links)
 * [User Story](#User-Story)
 * [Acceptance Criteria](#Acceptance-Criteria)
-* [Tests](#Tests)
 * [Technical Acceptance Criteria](#Technical-Acceptance-Criteria)
 * [Deployment](#Deployment)
 * [Application Quality](#Application-Quality)
@@ -23,16 +21,13 @@ An application called Note Taker that can be used to write and save notes. This 
 ### Tools
 - Express.js
 - Node.js
-- File system module (fs)
-- Path module
-- HTML (Hardcoded and Dynamic)
+- HTML
 - JavaScript
 - CSS
 
 ### Mock Up
 ![Team Generator HTML Webpage Screenshot](./assets/images/11-express-homework-demo-01.png)
 ![Team Generator HTML Webpage Screenshot](./assets/images/11-express-homework-demo-02.png)
-
 
 ## Instructions
 1. Clone the main project, then open the cloned file.
@@ -60,9 +55,6 @@ An application called Note Taker that can be used to write and save notes. This 
 * THEN that note appears in the right-hand column
 * WHEN I click on the Write icon in the navigation at the top of the page
 * THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
-
-### Tests
-* The command line to run a test on this application is: node server.js
 
 ### Technical Acceptance Criteria
 * Satisfies all of the preceding acceptance criteria plus the following:
